@@ -2,16 +2,28 @@ body{
     background-color:whitesmoke;
     padding: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    gap: 30px;
+}
+
+#basic {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+#standard {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+#premium {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .container-modal{
     display: flex; 
     flex-direction: column;
-    flex-grow: 0; flex-shrink: 1; flex-basis: 300px;   
+    flex-grow: 0; flex-shrink: 1; flex-basis: 300px;    /* item will max of 300px*/
     align-items: center;  
     background-color: white;
     padding: 0;
@@ -23,7 +35,6 @@ body{
 hr {
     width: 80%;    /* Makes the line 80% of the container's width */
     height: 1.1px;   /* Increases the thickness of the line */
-    background-color: rgba(54, 54, 54, 0.343);
     border: none;
 }
 
@@ -113,7 +124,6 @@ li {
     'opsz' 24;
     font-size: 100px;
     color: transparent;  /* Make the icon color transparent */
-    background: linear-gradient(to right top, #4b6285, #008ab4, #00b3b6, #00d580, #a8eb12);; /* Gradient */
     -webkit-background-clip: text;  /* Clip the gradient to the text */
     background-clip: text;          /* Clip the gradient to the text */
 }
@@ -127,11 +137,12 @@ li > p {
     margin: 0%;
 }
 .button {
-    background-image: linear-gradient(to right top, #4b6285, #008ab4, #00b3b6, #00d580, #a8eb12);
+
     border: 0;
     border-radius: 10px;
     padding: 10px 20px;
     color: azure;
     margin-bottom: 100px;
 }
+
 
